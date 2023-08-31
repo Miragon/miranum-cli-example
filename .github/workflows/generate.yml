@@ -6,9 +6,9 @@ jobs:
     steps:
     - name: Checkout sources
       uses: actions/checkout@v3 
-    # - name: pull image
-    #   run: docker pull miragon/process-ide-cli:0.0.3
+    - name: pull image
+      run: docker pull miragon/process-ide-cli
     - name: test
       run: ls
-    # - name: test file access
-    #   run: docker run miragon/process-ide-cli:0.0.3 node main.js deploy -d example/ -t local
+    - name: test file access
+      run: docker run miragon/process-ide-cli node main.js deploy -d example/ -t local
