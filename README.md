@@ -18,22 +18,22 @@ This project showcases an example usecase for the miranum-cli in combination wit
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Miragon/miranum-ide.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Miragon/miranum-cli-example.svg?style=for-the-badge
 
 [contributors-url]: https://github.com/Miragon/miranum-cli-example/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/Miragon/miranum-ide.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Miragon/miranum-cli-example.svg?style=for-the-badge
 
 [forks-url]: https://github.com/Miragon/miranum-cli-example/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/Miragon/miranum-ide.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Miragon/miranum-cli-example.svg?style=for-the-badge
 
 [stars-url]: https://github.com/Miragon/miranum-cli-example/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/Miragon/miranum-ide.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Miragon/miranum-cli-example.svg?style=for-the-badge
 
 [issues-url]: https://github.com/Miragon/miranum-cli-example/issues
 
-[license-shield]: https://img.shields.io/github/license/Miragon/miranum-connect.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Miragon/miranum-cli-example.svg?style=for-the-badge
 
 [license-url]: https://github.com/Miragon/miranum-cli-example/blob/main/LICENSE
