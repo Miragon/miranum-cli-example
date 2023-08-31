@@ -3,9 +3,8 @@ on: [workflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: miragon/process-ide-cli:0.0.3
     steps: 
-    - name: test
-      run: ls -la
+    - name: pull image
+      run: docker pull miragon/process-ide-cli:0.0.3  
     - name: test file access
-      run: node main.js deploy -d example/ -t local
+      run: docker run miragon/process-ide-cli:0.0.3 node main.js deploy -d example/ -t local
