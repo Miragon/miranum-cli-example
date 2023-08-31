@@ -3,7 +3,7 @@ on: [workflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: miragon/process-ide-cli
+    container: miragon/process-ide-cli:0.0.3
     steps: 
     - name: test
       run: ls
