@@ -1,11 +1,12 @@
-name: generat-project
+name: deploy process
 on: [workflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: miragon/process-ide-cli:0.0.3
-    steps: 
-    - name: test
-      run: ls
-    - name: test file access
-      run: node main.js deploy -d example/ -t local
+    steps:
+    - name: Checkout sources
+      uses: actions/checkout@v3 
+    - name: Pull image
+      run: docker pull miragon/process-ide-cli
+    - name: Deploy process
+      run: docker run miragon/process-ide-cli node main.js deploy -d example/ -t local
