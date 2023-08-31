@@ -6,6 +6,6 @@ jobs:
     container: miragon/process-ide-cli
     steps: 
     - name: test
-      run: ls
+      run: ls -la
     - name: test file access
       run: node main.js deploy -d example/ -t local
