@@ -1,4 +1,4 @@
-name: generate-project
+name: deploy process
 on: [workflow_dispatch]
 jobs:
   deploy:
@@ -6,9 +6,7 @@ jobs:
     steps:
     - name: Checkout sources
       uses: actions/checkout@v3 
-    - name: pull image
+    - name: Pull image
       run: docker pull miragon/process-ide-cli
-    - name: test
-      run: ls
-    - name: test file access
+    - name: Deploy process
       run: docker run miragon/process-ide-cli node main.js deploy -d example/ -t local
