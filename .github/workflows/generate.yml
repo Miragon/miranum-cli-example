@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Checkout sources
       uses: actions/checkout@v3 
-    - name: Pull image
-      run: docker pull miragon/process-ide-cli
     - name: Deploy process
-      run: docker run miragon/process-ide-cli node main.js deploy -d example/ -t local
+      uses: miragon/miranum-cli-action@latest
+      with: 
+        project-directory: './'
