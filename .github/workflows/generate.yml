@@ -9,4 +9,4 @@ jobs:
     - name: Pull image
       run: docker pull miragon/process-ide-cli
     - name: Deploy process
-      run: docker run miragon/process-ide-cli node main.js deploy -d example/ -t local
+      run: docker run -v $PWD/example:/app/artifacts miragon/process-ide-cli node main.js deploy -d artifacts -t test
